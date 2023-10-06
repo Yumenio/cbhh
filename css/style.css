@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  position: fixed;
+  background: #2596be;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+.navbar-brand img {
+  height: 5rem;
+}
+.nav-item {
+  margin-left: 2rem;
+}
+.nav-item a:hover {
+  color: #4aa693;
+}
+.btn-outline-contact {
+  border-color: black;
+  color: black;
+}
