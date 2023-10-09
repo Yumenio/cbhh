@@ -231,7 +231,8 @@ h2.section-heading.white-text {
 }
 .container .contactInfo .box {
   position: relative;
-  padding: 20px 10vw;
+  padding: 20px;
+  margin-right: 10vw;
   display: flex;
 }
 .container .contactInfo .box .icon {
