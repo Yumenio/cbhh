@@ -10,6 +10,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Recoleta SemiBold';
+  src: url(/fonts/Recoleta-SemiBold.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Recoleta Bold';
   src: url(/fonts/Recoleta-Bold.woff2) format('woff2');
   font-weight: bold;
@@ -88,6 +94,31 @@ section {
   #home img {
     /* margin-top: 100px; */
     width: 150%;
+  }
+
+  .intro-lead-in {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+    line-height: 32px;
+    margin-top: 200px;
+    margin-bottom: 25px;
+    font-family: 'Recoleta Regular', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+  }
+  .intro-heading {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 275px;
+    font-family: 'Recoleta Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
 }
 .section-heading {
@@ -296,4 +327,153 @@ textarea:valid ~ span {
   .contactForm {
     width: 100%;
   }
+}
+
+/* Services */
+.centered-icon {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .centered-icon {
+  opacity: 1;
+}
+@media (min-width: 800px) {
+  .portfolio-img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgba(37, 150, 190, 0.7);
+}
+.portfolio-hover:hover {
+  opacity: 1;
+}
+.portfolio-hover .portfolio-hover-content {
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+}
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  i {
+  margin-top: -12px;
+}
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  h3,
+#portfolio
+  .portfolio-item
+  .portfolio-link
+  .portfolio-hover
+  .portfolio-hover-content
+  h4 {
+  margin: 0;
+}
+
+/* Modals */
+.modal-heading {
+  font-size: 4vh;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Recoleta Bold';
+}
+/* Borrowed */
+.portfolio-modal {
+  padding-right: 0 !important;
+}
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+.portfolio-modal .modal-content {
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content button {
+  cursor: pointer;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #2596be;
+}
+.portfolio-modal .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #2596be;
+}
+.modal-close-button {
+  background-color: #ffffff;
+  border-color: black;
+  color: black;
+}
+.modal-close-button:hover {
+  background-color: #2596be;
+  border-color: #2596be;
+  color: white;
 }
