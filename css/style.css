@@ -286,6 +286,8 @@ textarea:valid ~ span {
   }
   #contact .container {
     flex-direction: column;
+    margin: 0 0;
+    width: 80vw;
   }
   .container .contactInfo {
     margin-bottom: 40px;
