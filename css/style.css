@@ -3,6 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: 'Recoleta Regular';
   src: url(/fonts/Recoleta-Regular.woff2) format('woff2');
@@ -192,10 +196,12 @@ h2.section-heading.white-text {
 
 .service-heading {
   margin-top: 10px;
+  font-family: 'Recoleta SemiBold';
 }
 
 .service-heading-goals {
   margin-top: 50px;
+  font-family: 'Recoleta SemiBold';
 }
 
 /* Cards */
@@ -491,4 +497,15 @@ textarea:valid ~ span {
   background-color: #2596be;
   border-color: #2596be;
   color: white;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #7cc0d8;
+}
+
+.nav-item {
+  font-family: 'Recoleta Regular';
 }

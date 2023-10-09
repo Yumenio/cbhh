@@ -44,13 +44,13 @@
     <title>Coastal Breeze Home Health Inc.</title>
   </head>
 
-  <body>
+  <body id="intro">
     <!-- Nav -->
     <div id="nav">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand js-scroll-trigger" href="#intro"
               ><img src="img/logos/logo.png" alt="Company Logo"
             /></a>
             <button
@@ -79,11 +79,8 @@
                   <a class="nav-link" href="#providers">INSURANCE PROVIDERS</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="btn btn-outline-contact my-2 my-sm-0"
-                    href="#contact"
-                    >CONTACT US</a
-                  >
+                  <!-- class="btn btn-outline-contact my-2 my-sm-0" -->
+                  <a class="nav-link" href="#contact">CONTACT US</a>
                 </li>
               </ul>
             </div>
@@ -339,7 +336,7 @@
             <div class="icon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="text">
+            <div class="text" style="font-family: Recoleta SemiBold">
               <h3>Address</h3>
               <p
                 >1405 SE 47TH STREET STE 1 <br />
@@ -351,7 +348,7 @@
             <div class="icon">
               <i class="fa-solid fa-phone"></i>
             </div>
-            <div class="text">
+            <div class="text" style="font-family: Recoleta SemiBold">
               <h3>Phone</h3>
               <p
                 ><a href="tel:2395414698" style="color: white"
@@ -364,7 +361,7 @@
             <div class="icon">
               <i class="fa-solid fa-print"></i>
             </div>
-            <div class="text">
+            <div class="text" style="font-family: Recoleta SemiBold">
               <h3>Fax</h3>
               <p
                 ><a href="tel:2395414699" style="color: white"
@@ -375,8 +372,8 @@
           </div>
         </div>
         <div class="contactForm">
-          <form>
-            <h2>Send Message</h2>
+          <form id="messageForm">
+            <h2 style="font-family: Recoleta SemiBold">Send Message</h2>
             <div class="inputBox">
               <input type="text" name="" required="required" />
               <span>Full Name</span>
