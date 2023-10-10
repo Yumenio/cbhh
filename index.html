@@ -372,26 +372,31 @@
           </div>
         </div>
         <div class="contactForm">
-          <form id="messageForm">
+          <form id="contactForm" onsubmit="sendEmail(); reset(); return false;">
             <h2 style="font-family: Recoleta SemiBold">Send Message</h2>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
+              <input id="name" type="text" name="" required="required" />
               <span>Full Name</span>
             </div>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
+              <input id="email" type="email" name="" required="required" />
               <span>Email</span>
             </div>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
+              <input id="phone" type="tel" name="" required="required" />
               <span>Phone</span>
             </div>
             <div clas="inputBox">
-              <textarea required="required"></textarea>
+              <textarea id="message" required="required"></textarea>
               <span>Type your Message...</span>
             </div>
             <div class="inputBox">
-              <input type="submit" name="" value="Send" />
+              <input
+                id="sendMessageButton"
+                type="submit"
+                name=""
+                value="Send"
+              />
             </div>
           </form>
         </div>
@@ -775,12 +780,10 @@
       </div>
     </div>
 
-    <!-- Main Scripts -->
-    <script src="./js/main.js"></script>
     <!-- jquery -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
@@ -794,5 +797,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <!-- Main Scripts -->
+    <!-- Email from https://smtpjs.com/ -->
+    <script src="./js/jqBootstrapValidation.js"></script>
+    <script src="./js/smtp.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contact_me.js"></script>
   </body>
 </html>
