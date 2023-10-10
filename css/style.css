@@ -512,3 +512,14 @@ textarea:valid ~ span {
 .nav-item {
   font-family: 'Recoleta Regular';
 }
+
+footer {
+  background-color: #ffffff; /* Footer background color */
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  color: #333; /* Footer text color */
+}
