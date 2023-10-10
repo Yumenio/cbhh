@@ -20,6 +20,14 @@ function sendEmail() {
     .then((message) => {
       console.log('Email sent succesfully');
       $('#successMessage').removeClass('hidden');
+      // Hide the success message after 5 seconds
+      setTimeout(function() {
+        $('#successMessage').fadeOut(1000, function() {
+          $(this).addClass('hidden');
+          // reset the display property, bc the fadeOut function overrides it to display:none
+          $(this).css('display', '');
+        });
+      }, 5000); // Adjust the duration as needed
     })
     .catch((error) => {
       console.error('Error sending message:', error);
