@@ -2,7 +2,7 @@ function sendEmail() {
   Email.send({
     Host: 'smtp.elasticemail.com',
     Username: 'alejandroandy447@gmail.com',
-    Password: 'tbh',
+    Password: 'tbd',
     To: 'alejandroandy447@gmail.com',
     // From: document.getElementById('email').value,
     From: 'alejandroandy447@gmail.com',
@@ -22,8 +22,8 @@ function sendEmail() {
       $('#successMessage').removeClass('hidden');
     })
     .catch((error) => {
-      console.error('Error sendind message:', error);
-      alert('Error sendind message. Please try again later.');
+      console.error('Error sending message:', error);
+      alert('Error sending message. Please try again later.');
     });
 }
 
