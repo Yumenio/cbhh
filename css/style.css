@@ -8,21 +8,21 @@ body {
   scroll-behavior: smooth;
 }
 @font-face {
+  font-family: 'Recoleta Bold';
+  src: url('../fonts/Recoleta-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Recoleta Regular';
-  src: url(/fonts/Recoleta-Regular.woff2) format('woff2');
+  src: url('../fonts/Recoleta-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Recoleta SemiBold';
-  src: url(/fonts/Recoleta-SemiBold.woff2) format('woff2');
+  src: url('../fonts/Recoleta-SemiBold.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Recoleta Bold';
-  src: url(/fonts/Recoleta-Bold.woff2) format('woff2');
-  font-weight: bold;
   font-style: normal;
 }
 nav {
@@ -69,7 +69,7 @@ section {
 /* Welcome */
 .welcome-msg {
   margin-top: 100px;
-  background: url(/img/header-bg.jpg);
+  background: url('../img/header-bg.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
