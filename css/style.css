@@ -106,12 +106,13 @@ section {
 
 /* Home */
 #home img {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 @media (max-width: 800px) {
   #home img {
     /* margin-top: 100px; */
-    width: 150%;
+    width: 100%;
+    height: auto;
   }
 
   .intro-lead-in {
@@ -142,7 +143,7 @@ section {
 .section-heading {
   font-size: 4vh;
   font-weight: 700;
-  margin-top: 80px;
+  margin-top: 55px;
   margin-bottom: 20px;
   font-family: 'Recoleta Bold';
 }
@@ -156,7 +157,9 @@ section h3.section-subheading {
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
+.achc-image{
+  height:300px;
+}
 #heart-icon {
   color: white; /* Default color */
   transition: transform 0.3s; /* Add a transition for smoother hover effect */
