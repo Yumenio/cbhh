@@ -1,7 +1,7 @@
 function sendEmail() {
   Email.send({
     Host: 'smtp.elasticemail.com',
-    Username: 'alejandroandy447@gmail.com',
+    Username: 'info@coastalbreezehh.com',
     Password: 'tbd',
     To: 'alejandroandy447@gmail.com',
     // From: document.getElementById('email').value,
